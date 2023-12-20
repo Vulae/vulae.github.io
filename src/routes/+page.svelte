@@ -79,7 +79,7 @@
         <div class="group flex gap-2 px-2 py-4 drop-shadow-outset">
             <a
                 href="https://www.pixiv.net/en/artworks/99750487"
-                title="Profile Picture Source"
+                title="Profile picture source"
                 class="hover:brightness-125 transition-[filter]"
             >
                 <img
