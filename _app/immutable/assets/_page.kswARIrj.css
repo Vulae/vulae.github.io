@@ -1,1 +1,0 @@
-@keyframes svelte-voxlib-fade-in{0%{opacity:0;filter:blur(20px)}to{opacity:1;filter:blur(0px)}}.fade-in.svelte-voxlib{opacity:0;animation-name:svelte-voxlib-fade-in;animation-duration:.8s;animation-delay:.2s;animation-fill-mode:forwards;animation-timing-function:ease-out}
