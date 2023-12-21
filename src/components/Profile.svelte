@@ -15,12 +15,12 @@
         <a
             href="https://www.pixiv.net/en/artworks/99750487"
             title="Profile picture source"
-            class="hover:brightness-125 transition-[filter]"
+            class="hover:brightness-125 transition-[filter] w-24 h-24"
         >
             <img
                 src="/github.jpg"
                 alt="GitHub Profile"
-                class="w-24 h-24 rounded-full border-2 border-white"
+                class="rounded-full border-2 border-zinc-900"
             >
         </a>
         <span class="px-2 font-caveat text-8xl font-semibold name">
