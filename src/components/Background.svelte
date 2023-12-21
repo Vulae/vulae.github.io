@@ -44,20 +44,27 @@
                 <feBlend in="SourceGraphic" mode="screen" />
             </filter>
     
+            <!-- TODO: Animate the nebulae moving and morphing instead of just changing colors. -->
             <filter id="nebula1" color-interpolation-filters="sRGB">
                 <feTurbulence type="fractalNoise" baseFrequency="0.005" numOctaves="3" {seed} />
                 <feColorMatrix values="0.3 0 0 0 0
                                        0 0 0 0 0
-                                       0 0 1.2 0 0
-                                       0.5 -0.5 0.5 1 0" />
+                                       0 0 0.5 0 0
+                                       0.5 -0.5 0.5 1 0"/>
+                <feColorMatrix type="hueRotate">
+                    <animate attributeName="values" values="0;360" dur="120s" repeatCount="indefinite" />
+                </feColorMatrix>
             </filter>
     
             <filter id="nebula2" color-interpolation-filters="sRGB">
                 <feTurbulence type="fractalNoise" baseFrequency="0.002" numOctaves="3" seed={seed+1} />
                 <feColorMatrix values="0 0 0 0 0
                                        0 0 0 0 0
-                                       0 0 0.5 0 0
-                                       0.5 -0.5 0.2 0 0" />
+                                       0 0 0.7 0 0
+                                       0.5 -0.5 0.5 0 0" />
+                <feColorMatrix type="hueRotate">
+                    <animate attributeName="values" values="0;360" dur="120s" repeatCount="indefinite" />
+                </feColorMatrix>
             </filter>
             
             <!-- A perspective effect to immerse more into space instead of just being a flat wallpaper. -->
