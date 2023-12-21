@@ -35,7 +35,7 @@
     
         <defs>
     
-            <filter id="stars">
+            <filter id="stars" color-interpolation-filters="sRGB">
                 <feTurbulence baseFrequency="0.2" {seed} />
                 <feColorMatrix values="0 0 0 9 -5
                                        0 0 0 9 -5
@@ -44,15 +44,15 @@
                 <feBlend in="SourceGraphic" mode="screen" />
             </filter>
     
-            <filter id="nebula1">
+            <filter id="nebula1" color-interpolation-filters="sRGB">
                 <feTurbulence type="fractalNoise" baseFrequency="0.005" numOctaves="3" {seed} />
                 <feColorMatrix values="0.3 0 0 0 0
                                        0 0 0 0 0
                                        0 0 1.2 0 0
-                                       0.5 -0.5 0.5 0 0" />
+                                       0.5 -0.5 0.5 1 0" />
             </filter>
     
-            <filter id="nebula2">
+            <filter id="nebula2" color-interpolation-filters="sRGB">
                 <feTurbulence type="fractalNoise" baseFrequency="0.002" numOctaves="3" seed={seed+1} />
                 <feColorMatrix values="0 0 0 0 0
                                        0 0 0 0 0
