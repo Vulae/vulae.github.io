@@ -31,12 +31,14 @@
 
 body {
     background-color: theme('colors.zinc.900');
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
+
+@media (prefers-reduced-motion) {
+    ::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation: none !important;
+	}
+}
