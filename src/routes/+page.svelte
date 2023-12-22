@@ -1,6 +1,7 @@
 <script lang="ts">
     import Background from "$components/Background.svelte";
     import Card from "$components/Card.svelte";
+    import Popup from "$components/Popup.svelte";
     import Profile from "$components/Profile.svelte";
     import SocialLink from "$components/SocialLink.svelte";
 
@@ -42,10 +43,7 @@
         </Card>
     </div>
     
-    <div class="popup fixed top-0 bottom-0 left-0 right-0 flex justify-center items-center z-50 bg-black bg-opacity-50" id="logos">
-        <!-- svelte-ignore a11y-invalid-attribute -->
-        <!-- svelte-ignore a11y-missing-content -->
-        <a class="fixed top-0 bottom-0 left-0 right-0" href="#"></a>
+    <Popup id="logos">
         <Card
             class="flex flex-col text-white font-segoe text-lg font-semibold"
             glowSize={300}
@@ -65,5 +63,5 @@
                 </span>
             </div>
         </Card>
-    </div>
+    </Popup>
 </div>
