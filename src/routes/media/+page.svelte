@@ -135,7 +135,7 @@
             </slot:fragment>
             <slot:fragment slot="description">
                 <span>
-                    <a href="www.minecraft.net">Minecraft</a>
+                    <a href="https://www.minecraft.net">Minecraft</a>
                     <br />
                     <a href="https://www.teamfortress.com/">Team Fortress 2</a>
                     <br />
