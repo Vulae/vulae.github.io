@@ -15,7 +15,7 @@
         @apply relative;
 
         &::before {
-            @apply absolute top-0 left-0 w-full h-full pointer-events-none;
+            @apply absolute top-0 left-0 w-full h-full pointer-events-none rounded-xl -z-10;
             content: '';
             transition: opacity 0.5s;
             opacity: 0;
@@ -34,7 +34,7 @@
 
 <div
     use:cursorStyle
-    class="glow bg-zinc-900 bg-opacity-50 backdrop-blur-md border border-zinc-800 rounded-lg drop-shadow-lg {_class}"
+    class="glow bg-zinc-900 bg-opacity-50 backdrop-blur-md border border-zinc-800 rounded-xl drop-shadow-lg {_class}"
     style:--glow-size="{glowSize}px"
     style:--glow-visibility={glowVisibility}
 >
