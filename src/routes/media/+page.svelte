@@ -40,21 +40,21 @@
                         <img src="https://yt3.googleusercontent.com/SSREcpreiHTyS3kTfBIOCOUNByeVb-3gvQoekzwZiVJMlY24_NqeTOZggIEI5UwyljSDurmP8w=s24" alt="@Bismuth9 Avatar" />
                         Bismuth
                     </a>
-                    <a href="https://www.youtube.com/@RGMechEx" title="A YouTube channel about video games & programming.">
-                        <img src="https://yt3.googleusercontent.com/ytc/AIf8zZTgonpqvirGHQ5joSfxra8_5TVq5En1Qvk3ir6xFA=s24" alt="@RGMechEx Avatar" />
-                        Retro Game Mechanics Explained
-                    </a>
-                    <a href="https://www.youtube.com/@MollyRocket" title="This is the official YouTube channel of https://mollyrocket.com, home of Star Code Galaxy, Handmade Hero, Meow the Infinite, and 1935.">
-                        <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQYxNrp39Nz0unYiMMe_FXX1vvRJCtFcNU1h3mWwQ=s24" alt="@MollyRocket Avatar" />
-                        Molly Rocket
+                    <a href="https://www.youtube.com/@BranchEducation" title="How do Microchips work?  How does your smartphone camera work?  How does Bluetooth work?  At Branch Education, we dive deep into the science, engineering, and technology in our modern world using 3D animation and incredibly detailed models. ">
+                        <img src="https://yt3.googleusercontent.com/4toKBJKPsAfwxy2xfr_EQJ7CuHpLvZa4eux6T2TAf8EU25uH_G9gbUA9djqaCrTjkIESnPjzww=s24" alt="@BranchEducation Avatar" />
+                        Branch Education
                     </a>
                     <a href="https://www.youtube.com/@acegikmo" title="I do videos on tech art, math, game dev, and whatever else I want to project to your screens.">
                         <img src="https://yt3.googleusercontent.com/fRuGUY-F28mPwio41AQwnvnikF2Yy3oFOWoBxK9Xlpri2QhGgCUmy3XoAkJgEGeBdNLaen6SkGo=s24" alt="@acegikmo Avatar" />
                         Freya Holmér
                     </a>
-                    <a href="https://www.youtube.com/@BranchEducation" title="How do Microchips work?  How does your smartphone camera work?  How does Bluetooth work?  At Branch Education, we dive deep into the science, engineering, and technology in our modern world using 3D animation and incredibly detailed models. ">
-                        <img src="https://yt3.googleusercontent.com/4toKBJKPsAfwxy2xfr_EQJ7CuHpLvZa4eux6T2TAf8EU25uH_G9gbUA9djqaCrTjkIESnPjzww=s24" alt="@BranchEducation Avatar" />
-                        Branch Education
+                    <a href="https://www.youtube.com/@MollyRocket" title="This is the official YouTube channel of https://mollyrocket.com, home of Star Code Galaxy, Handmade Hero, Meow the Infinite, and 1935.">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQYxNrp39Nz0unYiMMe_FXX1vvRJCtFcNU1h3mWwQ=s24" alt="@MollyRocket Avatar" />
+                        Molly Rocket
+                    </a>
+                    <a href="https://www.youtube.com/@RGMechEx" title="A YouTube channel about video games & programming.">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIf8zZTgonpqvirGHQ5joSfxra8_5TVq5En1Qvk3ir6xFA=s24" alt="@RGMechEx Avatar" />
+                        Retro Game Mechanics Explained
                     </a>
                 </div>
                 <span>
@@ -64,6 +64,10 @@
                     <a href="https://www.youtube.com/@XboxAhoy" title="Insightful gaming videos.">
                         <img src="https://yt3.googleusercontent.com/ytc/AIf8zZRskEAIr9p8xDjGVZZKxZrlaVOqr-mBZFxSycdlKg=s24" alt="@XboxAhoy Avatar" />
                         Ahoy
+                    </a>
+                    <a href="https://www.youtube.com/@BobbyBroccoli" title="Howdy, I do deep dive broccumentaries into science scandals and controversies. Currently I animate in Blender, and previously dabbled in Google Earth for a bit. Studied engineering physics and photonics in school.">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIf8zZR9dOg25858-j6LnltCep-FbyzJRjWTksnNzG0o4g=s24" alt="@BobbyBroccoli Avatar" />
+                        BobbyBroccoli
                     </a>
                     <a href="https://www.youtube.com/@LEMMiNO" title="Long-form videos about space and mysteries and whatnot.">
                         <img src="https://yt3.googleusercontent.com/ytc/AIf8zZRUFsEFNGLFNBVN54-xha1omfcAxC2Ny11LvH3P=s24" alt="@LEMMiNO Avatar" />
@@ -77,23 +81,11 @@
                         <img src="https://yt3.googleusercontent.com/ytc/AIf8zZTAYQXQXTL47WWey_Gor-KM7TTVJOia0ORbd9O0_g=s24" alt="@SummoningSalt Avatar" />
                         Summoning Salt
                     </a>
-                    <a href="https://www.youtube.com/@BobbyBroccoli" title="Howdy, I do deep dive broccumentaries into science scandals and controversies. Currently I animate in Blender, and previously dabbled in Google Earth for a bit. Studied engineering physics and photonics in school.">
-                        <img src="https://yt3.googleusercontent.com/ytc/AIf8zZR9dOg25858-j6LnltCep-FbyzJRjWTksnNzG0o4g=s24" alt="@BobbyBroccoli Avatar" />
-                        BobbyBroccoli
-                    </a>
                 </div>
                 <span>
                     Some other amazing channels —
                 </span>
                 <div class="youtube-list">
-                    <a href="https://www.youtube.com/@redshell907" title="Im just a guy who got lucky, not special.">
-                        <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQHptNuhp3zaXSTm1Ugk2ueYXLHeOTmYY0jJoAW=s24" alt="@redshell907 Avatar" />
-                        Redshell
-                    </a>
-                    <a href="https://www.youtube.com/@Profussy" title="Professor Lando is educating the masses on every single subject and discipline imaginable.">
-                        <img src="https://yt3.googleusercontent.com/PoKfZtEUZ5bgHUAMkXFWbAkg6whjTujwwq4hScDPk-GlTtfvpg2HVUzD48hx2jYwNsBm4Sq9=s24" alt="@Profussy Avatar" />
-                        Professor Lando
-                    </a>
                     <a href="https://www.youtube.com/@Aliensrock" title="Hi I'm Tyler, and I have a puzzle game addiction.">
                         <img src="https://yt3.googleusercontent.com/ytc/AIf8zZTf3JO5neXj3mEeQ7sibbIZSHXM8dH5bi9ktsJM=s24" alt="@Aliensrock Avatar" />
                         Aliensrock
@@ -105,6 +97,14 @@
                     <a href="https://www.youtube.com/@CDawgVA " title="This guy is hilarious, his acting is on point and he's just a great guy. He also likes talking about himself in the third person, he thinks third person means 3 times as many people like his stuff. Oh you.">
                         <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQrhG8raM7U3ZUHTZ1qlVZpZTVkxJPkVINJQPIL_Q=s24" alt="@CDawgVA Avatar" />
                         CDawgVA 
+                    </a>
+                    <a href="https://www.youtube.com/@Profussy" title="Professor Lando is educating the masses on every single subject and discipline imaginable.">
+                        <img src="https://yt3.googleusercontent.com/PoKfZtEUZ5bgHUAMkXFWbAkg6whjTujwwq4hScDPk-GlTtfvpg2HVUzD48hx2jYwNsBm4Sq9=s24" alt="@Profussy Avatar" />
+                        Professor Lando
+                    </a>
+                    <a href="https://www.youtube.com/@redshell907" title="Im just a guy who got lucky, not special.">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQHptNuhp3zaXSTm1Ugk2ueYXLHeOTmYY0jJoAW=s24" alt="@redshell907 Avatar" />
+                        Redshell
                     </a>
                 </div>
             </slot:fragment>
@@ -135,17 +135,15 @@
             </slot:fragment>
             <slot:fragment slot="description">
                 <span>
-                    <a href="https://www.minecraft.net">Minecraft</a>
+                    Here's some of my favorite games.
                     <br />
-                    <a href="https://www.teamfortress.com/">Team Fortress 2</a>
+                    <a href="https://www.teamfortress.com/">Team Fortress 2</a> • <a href="https://www.minecraft.net">Minecraft</a>
                     <br />
-                    <a href="https://zelda.nintendo.com/breath-of-the-wild/">The Legend of Zelda: Breath of the Wild</a>
+                    <a href="https://www.ubisoft.com/en-us/game/trackmania/trackmania">Trackmania</a> • <a href="https://zelda.nintendo.com/breath-of-the-wild/">The Legend of Zelda: Breath of the Wild</a>
                     <br />
-                    <a href="https://www.ubisoft.com/en-us/game/trackmania/trackmania">Trackmania</a>
+                    <a href="https://gmod.facepunch.com/">Garry's Mod</a> • <a href="https://ninjakiwi.com/Games/Mobile/Bloons-TD-6.html">Bloons TD 6</a>
                     <br />
-                    <a href="https://store.steampowered.com/app/49520/">Borderlands 2</a>
-                    <br />
-                    <a href="https://www.valheimgame.com/">Valheim</a>
+                    <a href="https://www.valheimgame.com/">Valheim</a> • <a href="https://store.steampowered.com/app/49520/">Borderlands 2</a>
                 </span>
             </slot:fragment>
         </MediaCard>
