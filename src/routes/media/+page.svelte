@@ -3,6 +3,10 @@
 
 </script>
 
+<svelte:head>
+    <title>Vulae - Media</title>
+</svelte:head>
+
 <style lang="scss">
 
     .youtube-list {
