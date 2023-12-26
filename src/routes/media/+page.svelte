@@ -1,5 +1,5 @@
 <script lang="ts">
-    import MediaCard from "$components/MediaCard.svelte";
+    import TitleCard from "$components/TitleCard.svelte";
 
 </script>
 
@@ -31,7 +31,7 @@
         </dd>
     </dl>
     <div class="grid grid-rows-2 md:grid-cols-2 gap-8 mx-auto max-w-5xl">
-        <MediaCard class="bg-zinc-950 row-span-2">
+        <TitleCard class="bg-zinc-950 row-span-2">
             <slot:fragment slot="title">
                 YouTube
             </slot:fragment>
@@ -112,8 +112,8 @@
                     </a>
                 </div>
             </slot:fragment>
-        </MediaCard>
-        <MediaCard class="bg-zinc-950 col-span-1">
+        </TitleCard>
+        <TitleCard class="bg-zinc-950 col-span-1">
             <slot:fragment slot="title">
                 Anime
             </slot:fragment>
@@ -132,8 +132,8 @@
                     <a href="https://www.youtube.com/@GundamInfo/playlists">GundamInfo</a> YouTube channel.
                 </span>
             </slot:fragment>
-        </MediaCard>
-        <MediaCard class="bg-zinc-950 col-span-1">
+        </TitleCard>
+        <TitleCard class="bg-zinc-950 col-span-1">
             <slot:fragment slot="title">
                 Gaming
             </slot:fragment>
@@ -150,7 +150,7 @@
                     <a href="https://www.valheimgame.com/">Valheim</a> • <a href="https://store.steampowered.com/app/49520/">Borderlands 2</a>
                 </span>
             </slot:fragment>
-        </MediaCard>
+        </TitleCard>
     </div>
 </div>
 

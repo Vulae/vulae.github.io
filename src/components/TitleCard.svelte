@@ -15,4 +15,5 @@
             <slot name="description" />
         </dd>
     </dl>
+    <slot name="extra" />
 </Card>
