@@ -1,6 +1,10 @@
 
 <style lang="scss">
 
+    .profile {
+        view-transition-name: profile;
+    }
+
     .name {
         background: linear-gradient(56deg, rgba(139, 0, 181, 1) 10%, rgba(0, 130, 176, 1) 50%, rgba(0, 33, 255, 1) 80%);
         -webkit-background-clip: text;
@@ -10,7 +14,7 @@
 
 </style>
 
-<div class="flex flex-col gap-4">
+<div class="profile flex flex-col gap-4">
     <div class="group flex gap-2 px-2 py-4 drop-shadow-outset">
         <a
             href="https://www.pixiv.net/en/artworks/99750487"

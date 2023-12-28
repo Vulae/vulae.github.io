@@ -32,6 +32,7 @@
                 <div class="flex flex-col gap-1 py-2 [&>a]:px-4 [&>a]:text-center">
                     <a href="/projects" title="A list of my projects">Projects</a>
                     <a href="/media" title="Media I like">Media</a>
+                    <a href="/setup" title="My Setup">Setup</a>
                 </div>
             </div>
             <div class="w-48 md:w-64 flex flex-col">
