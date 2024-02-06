@@ -94,6 +94,10 @@
                         <img src="https://yt3.googleusercontent.com/ytc/AIf8zZTf3JO5neXj3mEeQ7sibbIZSHXM8dH5bi9ktsJM=s24" alt="@Aliensrock Avatar" />
                         Aliensrock
                     </a>
+                    <a href="https://www.youtube.com/@Asianometry" title="Video essays on business, economics, and history. Sometimes about Asia, but not always. ">
+                        <img src="https://yt3.googleusercontent.com/fBpoUkJJ6iVHfHocQ0gPcqLxa1RJIZzdGmP0o72ZK2uVJFwbNt4Afnwmkvv_NikYGCQ6oI7L4dA=s24" alt="@Asianometry Avatar">
+                        Asianometry
+                    </a>
                     <a href="https://www.youtube.com/@CarlSagan42" title="CarlSagan42 plays Mario games.">
                         <img src="https://yt3.googleusercontent.com/5ZIyqBQuo2aMTrbNEWCDx8d6AUzLu4rGTnQ6KLApaVDRWpQxg1GpQnzz8eEbJfvHRwk2-HvUSw=s24" alt="@CarlSagan42 Avatar" />
                         CarlSagan42 
@@ -121,15 +125,18 @@
                 <span>
                     My favorite animes are:
                     <br />
+                    <a href="https://www.crunchyroll.com/series/GG5H5XMWV">To Your Eternity</a>
+                     - 
                     <a href="https://www.crunchyroll.com/series/G79H2307W">Mobile Suit Gundam: The Witch from Mercury</a>
-                    <br />
+                     - 
                     <a href="https://www.crunchyroll.com/series/GYGG99WDY">Charlotte</a>
-                    <br />
+                     - 
                     <a href="https://www.crunchyroll.com/series/G6NVG970Y">Welcome to Demon School! Iruma-kun</a>
                     <br />
                     <br />
                     I usually watch whatever Gundam anime is currently airing on
-                    <a href="https://www.youtube.com/@GundamInfo/playlists">GundamInfo</a> YouTube channel.
+                    <a href="https://www.youtube.com/@GundamInfo/playlists">GundamInfo</a>
+                    YouTube channel.
                 </span>
             </slot:fragment>
         </TitleCard>

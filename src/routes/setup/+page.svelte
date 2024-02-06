@@ -79,6 +79,8 @@
                 <a href="https://www.blender.org/">Blender</a> (3d modelling & video editing)
                 <br />
                 <a href="https://obsproject.com/">OBS Studio</a> (Video recording)
+                <br />
+                <a href="https://bard.google.com/chat">Google Bard</a> (AI Assistant)
             </slot:fragment>
         </TitleCard>
     </div>
