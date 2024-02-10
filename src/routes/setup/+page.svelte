@@ -80,7 +80,7 @@
                 <br />
                 <a href="https://obsproject.com/">OBS Studio</a> (Video recording)
                 <br />
-                <a href="https://bard.google.com/chat">Google Bard</a> (AI Assistant)
+                <a href="https://gemini.google.com/app">Google Gemini</a> (AI Assistant)
             </slot:fragment>
         </TitleCard>
     </div>
