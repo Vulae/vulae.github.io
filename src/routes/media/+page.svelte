@@ -1,5 +1,5 @@
 <script lang="ts">
-    import AnimeSquare from "$components/AnimeSquare.svelte";
+    import AnimeSquare from "./AnimeSquare.svelte";
     import TitleCard from "$components/TitleCard.svelte";
 
 </script>

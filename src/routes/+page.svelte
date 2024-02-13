@@ -3,7 +3,7 @@
     import Card from "$components/Card.svelte";
     import Popup from "$components/Popup.svelte";
     import Profile from "$components/Profile.svelte";
-    import SocialLink from "$components/SocialLink.svelte";
+    import SocialLink from "./SocialLink.svelte";
 
 </script>
 
