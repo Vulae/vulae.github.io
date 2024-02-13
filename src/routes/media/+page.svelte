@@ -1,4 +1,5 @@
 <script lang="ts">
+    import AnimeSquare from "$components/AnimeSquare.svelte";
     import TitleCard from "$components/TitleCard.svelte";
 
 </script>
@@ -122,7 +123,7 @@
                 Anime
             </slot:fragment>
             <slot:fragment slot="description">
-                <span>
+                <!-- <span>
                     My favorite animes are:
                     <br />
                     <a href="https://www.crunchyroll.com/series/GG5H5XMWV">To Your Eternity</a>
@@ -137,7 +138,8 @@
                     I usually watch whatever Gundam anime is currently airing on
                     <a href="https://www.youtube.com/@GundamInfo/playlists">GundamInfo</a>
                     YouTube channel.
-                </span>
+                </span> -->
+                <AnimeSquare />
             </slot:fragment>
         </TitleCard>
         <TitleCard class="bg-zinc-950 col-span-1">
@@ -148,13 +150,21 @@
                 <span>
                     Here's some of my favorite games.
                     <br />
-                    <a href="https://www.teamfortress.com/">Team Fortress 2</a> • <a href="https://www.minecraft.net">Minecraft</a>
+                    <a href="https://www.teamfortress.com/">Team Fortress 2</a>
                     <br />
-                    <a href="https://www.ubisoft.com/en-us/game/trackmania/trackmania">Trackmania</a> • <a href="https://zelda.nintendo.com/breath-of-the-wild/">The Legend of Zelda: Breath of the Wild</a>
+                    <a href="https://www.minecraft.net">Minecraft</a>
                     <br />
-                    <a href="https://gmod.facepunch.com/">Garry's Mod</a> • <a href="https://ninjakiwi.com/Games/Mobile/Bloons-TD-6.html">Bloons TD 6</a>
+                    <a href="https://www.ubisoft.com/en-us/game/trackmania/trackmania">Trackmania</a>
                     <br />
-                    <a href="https://www.valheimgame.com/">Valheim</a> • <a href="https://store.steampowered.com/app/49520/">Borderlands 2</a>
+                    <a href="https://zelda.nintendo.com/breath-of-the-wild/">The Legend of Zelda: Breath of the Wild</a>
+                    <br />
+                    <a href="https://gmod.facepunch.com/">Garry's Mod</a>
+                    <br />
+                    <a href="https://ninjakiwi.com/Games/Mobile/Bloons-TD-6.html">Bloons TD 6</a>
+                    <br />
+                    <a href="https://www.valheimgame.com/">Valheim</a>
+                    <br />
+                    <a href="https://store.steampowered.com/app/49520/">Borderlands 2</a>
                 </span>
             </slot:fragment>
         </TitleCard>
