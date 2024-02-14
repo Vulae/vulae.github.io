@@ -139,7 +139,47 @@
                     <a href="https://www.youtube.com/@GundamInfo/playlists">GundamInfo</a>
                     YouTube channel.
                 </span> -->
-                <AnimeSquare />
+                <AnimeSquare
+                    width={3}
+                    height={3}
+                    items={[{
+                        name: 'Mobile Suit Gundam the Witch from Mercury',
+                        url: 'https://www.crunchyroll.com/series/G79H2307W/mobile-suit-gundam-the-witch-from-mercury',
+                        img: '07fda9ad4ae86df75320c1543a53719b.jpe'
+                    }, {
+                        name: 'To Your Eternity',
+                        url: 'https://www.crunchyroll.com/series/GG5H5XMWV/to-your-eternity',
+                        img: '0ce768f96b6dfa3db33abfca5108919f.jpe'
+                    }, {
+                        name: 'Horimiya',
+                        url: 'https://www.crunchyroll.com/series/G9VHN9P43/horimiya',
+                        img: '3a1254f863bf0c9315086d37911c66df.jpe'
+                    }, {
+                        name: "Vivy -Fluorite Eye's Song-",
+                        url: 'https://www.crunchyroll.com/series/GMEHME4M4/vivy--fluorite-eyes-song-',
+                        img: '41c3eec54958204f4c962defffd948c7.jpe'
+                    }, {
+                        name: "Snow White with the Red Hair",
+                        url: 'https://www.crunchyroll.com/series/GRZJ7QN86/snow-white-with-the-red-hair',
+                        img: '9e04c79f744de8a33913958ec987f49a.jpe'
+                    }, {
+                        name: "Welcome to Demon School! Iruma-kun",
+                        url: 'https://www.crunchyroll.com/series/G6NVG970Y/welcome-to-demon-school-iruma-kun',
+                        img: 'c0f666958d8a0bcadf03f637f6688672.jpe'
+                    }, {
+                        name: "Charlotte",
+                        url: 'https://www.crunchyroll.com/series/GYGG99WDY/charlotte',
+                        img: '00e81d27511ab96bc39b3b343bd9971f.jpe'
+                    }, {
+                        name: "BUILD-DIVIDE -#000000- CODE BLACK",
+                        url: 'https://www.crunchyroll.com/series/GG5H5XDE1/build-divide--000000--code-black',
+                        img: '9cf5ad7375ee37e1a829a6ae7d837dde.jpe'
+                    }, {
+                        name: "Recovery of an MMO Junkie",
+                        url: 'https://www.crunchyroll.com/series/GR49WNQE6/recovery-of-an-mmo-junkie',
+                        img: '2bdcf4cae76581578c128c8e87f71036.jpe'
+                    }]}
+                />
             </slot:fragment>
         </TitleCard>
         <TitleCard class="bg-zinc-950 col-span-1">
