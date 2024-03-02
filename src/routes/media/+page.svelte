@@ -123,29 +123,14 @@
                 Anime
             </slot:fragment>
             <slot:fragment slot="description">
-                <!-- <span>
-                    My favorite animes are:
-                    <br />
-                    <a href="https://www.crunchyroll.com/series/GG5H5XMWV">To Your Eternity</a>
-                     - 
-                    <a href="https://www.crunchyroll.com/series/G79H2307W">Mobile Suit Gundam: The Witch from Mercury</a>
-                     - 
-                    <a href="https://www.crunchyroll.com/series/GYGG99WDY">Charlotte</a>
-                     - 
-                    <a href="https://www.crunchyroll.com/series/G6NVG970Y">Welcome to Demon School! Iruma-kun</a>
-                    <br />
-                    <br />
-                    I usually watch whatever Gundam anime is currently airing on
-                    <a href="https://www.youtube.com/@GundamInfo/playlists">GundamInfo</a>
-                    YouTube channel.
-                </span> -->
                 <AnimeSquare
                     width={3}
                     height={3}
                     items={[{
                         name: 'Mobile Suit Gundam the Witch from Mercury',
                         url: 'https://www.crunchyroll.com/series/G79H2307W/mobile-suit-gundam-the-witch-from-mercury',
-                        img: '07fda9ad4ae86df75320c1543a53719b.jpe'
+                        img: '07fda9ad4ae86df75320c1543a53719b.jpe',
+                        comment: "I very much recommend this anime for first time gundam watchers.<br /><br />I usually watch the currently airing gundam anime on <a href=\"https://www.youtube.com/@GundamInfo/playlists\">GundamInfo</a> YouTube channel."
                     }, {
                         name: 'To Your Eternity',
                         url: 'https://www.crunchyroll.com/series/GG5H5XMWV/to-your-eternity',
@@ -153,7 +138,8 @@
                     }, {
                         name: 'Horimiya',
                         url: 'https://www.crunchyroll.com/series/G9VHN9P43/horimiya',
-                        img: '3a1254f863bf0c9315086d37911c66df.jpe'
+                        img: '3a1254f863bf0c9315086d37911c66df.jpe',
+                        comment: "Very cute and wholesome romance anime."
                     }, {
                         name: "Vivy -Fluorite Eye's Song-",
                         url: 'https://www.crunchyroll.com/series/GMEHME4M4/vivy--fluorite-eyes-song-',

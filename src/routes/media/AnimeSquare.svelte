@@ -123,7 +123,7 @@
                     >{item.name}</a>
                     {#if item.comment}
                         <span class="pt-4 text-2xl">
-                            {item.comment}
+                            {@html item.comment}
                         </span>
                     {/if}
                 </div>
