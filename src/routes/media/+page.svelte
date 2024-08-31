@@ -157,9 +157,9 @@
                         url: 'https://www.crunchyroll.com/series/GYGG99WDY/charlotte',
                         img: '00e81d27511ab96bc39b3b343bd9971f.jpe'
                     }, {
-                        name: "BUILD-DIVIDE -#000000- CODE BLACK",
-                        url: 'https://www.crunchyroll.com/series/GG5H5XDE1/build-divide--000000--code-black',
-                        img: '9cf5ad7375ee37e1a829a6ae7d837dde.jpe'
+                        name: "Terror in Resonance",
+                        url: 'https://www.crunchyroll.com/series/G675W00MR/terror-in-resonance',
+                        img: 'e0bc1639524e169511fbabc9fcb15970.jpe'
                     }, {
                         name: "Recovery of an MMO Junkie",
                         url: 'https://www.crunchyroll.com/series/GR49WNQE6/recovery-of-an-mmo-junkie',
@@ -176,21 +176,16 @@
                 <span>
                     Here's some of my favorite games.
                     <br />
-                    <a href="https://www.teamfortress.com/">Team Fortress 2</a>
-                    <br />
-                    <a href="https://www.minecraft.net">Minecraft</a>
-                    <br />
-                    <a href="https://www.ubisoft.com/en-us/game/trackmania/trackmania">Trackmania</a>
-                    <br />
-                    <a href="https://zelda.nintendo.com/breath-of-the-wild/">The Legend of Zelda: Breath of the Wild</a>
-                    <br />
-                    <a href="https://gmod.facepunch.com/">Garry's Mod</a>
-                    <br />
-                    <a href="https://ninjakiwi.com/Games/Mobile/Bloons-TD-6.html">Bloons TD 6</a>
-                    <br />
-                    <a href="https://www.valheimgame.com/">Valheim</a>
-                    <br />
-                    <a href="https://store.steampowered.com/app/49520/">Borderlands 2</a>
+                    <a href="https://www.teamfortress.com/">Team Fortress 2</a><br />
+                    <a href="https://www.minecraft.net">Minecraft</a><br />
+                    <a href="https://www.ubisoft.com/en-us/game/trackmania/trackmania">Trackmania</a><br />
+                    <a href="https://zelda.nintendo.com/breath-of-the-wild/">The Legend of Zelda: Breath of the Wild</a><br />
+                    <a href="https://gmod.facepunch.com/">Garry's Mod</a><br />
+                    <a href="https://ninjakiwi.com/Games/Mobile/Bloons-TD-6.html">Bloons TD 6</a><br />
+                    <a href="https://www.valheimgame.com/">Valheim</a><br />
+                    <a href="https://store.steampowered.com/app/49520/">Borderlands 2</a><br />
+                    <a href="https://overwatch.blizzard.com/">Overwatch 2</a><br />
+                    <a href="https://store.steampowered.com/app/548430/Deep_Rock_Galactic/">Deep Rock Galactic</a><br />
                 </span>
             </slot:fragment>
         </TitleCard>

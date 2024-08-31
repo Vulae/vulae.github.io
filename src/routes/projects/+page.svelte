@@ -44,6 +44,31 @@
         </ProjectCard>
         <ProjectCard class="w-80 bg-zinc-950">
             <slot:fragment slot="title">
+                <a href="https://github.com/Vulae/infinite-minesweeper" target="_blank">Infinite Minesweeper</a>
+            </slot:fragment>
+            <slot:fragment slot="description">
+                Infinite Minesweeper game with biomes that change the rules.
+            </slot:fragment>
+            <slot:fragment slot="extra">
+                <a href="https://vulae.github.io/infinite-minesweeper/" target="_blank">
+                    <img
+                        class="w-full h-full bg-black object-cover"
+                        src="/infinite-minesweeper.png"
+                        alt="Infinite Minesweeper"
+                    >
+                </a>
+            </slot:fragment>
+        </ProjectCard>
+        <ProjectCard class="w-80 bg-zinc-950">
+            <slot:fragment slot="title">
+                <a href="https://github.com/Vulae/universal-explorer" target="_blank">universal-explorer</a>
+            </slot:fragment>
+            <slot:fragment slot="description">
+                Simple tool to view & unpack a variety of game archive formats. 
+            </slot:fragment>
+        </ProjectCard>
+        <!-- <ProjectCard class="w-80 bg-zinc-950">
+            <slot:fragment slot="title">
                 <a href="https://github.com/Vulae/itch-io-downloader">itch-io-downloader</a>
             </slot:fragment>
             <slot:fragment slot="description">
@@ -51,14 +76,14 @@
             </slot:fragment>
             <slot:fragment slot="extra">
                 <a href="https://github.com/Vulae/itch-io-downloader/releases/latest" target="_blank">
-                    <!-- svelte-ignore a11y-missing-attribute -->
                     <img
                         class="w-full h-full bg-black object-contain"
                         src="/itch-io-downloader.png"
+                        alt="itch-io-downloader"
                     >
                 </a>
             </slot:fragment>
-        </ProjectCard>
+        </ProjectCard> -->
         <ProjectCard class="w-80 bg-zinc-950">
             <slot:fragment slot="title">
                 <a href="https://github.com/Vulae/gmod-bad-apple">gmod-bad-apple</a>
@@ -69,12 +94,20 @@
             </slot:fragment>
             <slot:fragment slot="extra">
                 <a href="https://www.youtube.com/watch?v=nf00VvO-mEk" target="_blank">
-                    <!-- svelte-ignore a11y-missing-attribute -->
                     <img
                         class="w-full h-full bg-black object-contain"
                         src="https://img.youtube.com/vi/nf00VvO-mEk/0.jpg"
+                        alt="gmod-bad-apple"
                     >
                 </a>
+            </slot:fragment>
+        </ProjectCard>
+        <ProjectCard class="w-80 bg-zinc-950">
+            <slot:fragment slot="title">
+                <a href="https://github.com/Vulae/yt-dlp-music-player" target="_blank">yt-dlp-music-player</a>
+            </slot:fragment>
+            <slot:fragment slot="description">
+                A simple Windows media player to download & play a Youtube playlist of songs.
             </slot:fragment>
         </ProjectCard>
         <ProjectCard class="w-80 bg-zinc-950">

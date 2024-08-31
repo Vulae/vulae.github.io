@@ -25,8 +25,8 @@
             PC specs, code editor, & tools I use.
         </dd>
     </dl>
-    <div class="grid grid-rows-2 md:grid-cols-2 gap-8 mx-auto max-w-5xl">
-        <TitleCard class="bg-zinc-950 row-span-2">
+    <div class="grid md:grid-cols-2 gap-8 mx-auto max-w-5xl">
+        <TitleCard class="bg-zinc-950">
             <slot:fragment slot="title">
                 PC Specs
             </slot:fragment>
@@ -55,7 +55,25 @@
                 </table>
             </slot:fragment>
         </TitleCard>
-        <TitleCard class="bg-zinc-950 col-span-1">
+        <TitleCard class="bg-zinc-950 row-span-2">
+            <slot:fragment slot="title">
+                Tools
+            </slot:fragment>
+            <slot:fragment slot="description">
+                <a href="https://getpaint.net/">paint.net</a> (Basic image editing)<br />
+                <a href="https://www.gimp.org/">Gimp</a> (Advanced image editing)<br />
+                <a href="https://notepad-plus-plus.org/">Notepad++</a> (Basic text editing)<br />
+                <a href="https://www.blender.org/">Blender</a> (3d modelling & video editing)<br />
+                <a href="https://obsproject.com/">OBS Studio</a> (Video recording)<br />
+                <a href="https://claude.ai/">Claude</a> (AI Assistant)<br />
+                <a href="https://gchq.github.io/CyberChef/">CyberChef</a> (Simple data modification)<br />
+                <a href="https://github.com/WerWolv/ImHex">ImHex</a> (Binary data forensics)<br />
+                <a href="https://godbolt.org/">Compiler Explorer</a><br />
+                <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a> (Download videos from literally any site)<br />
+                <a href="https://pinggy.io/">Pinggy</a> (Tunnel localhost)<br />
+            </slot:fragment>
+        </TitleCard>
+        <TitleCard class="bg-zinc-950">
             <slot:fragment slot="title">
                 Code Editor
             </slot:fragment>
@@ -65,24 +83,34 @@
                 Theme - Default (Dark Modern)
                 <br />
                 Font - Default (Consolas, 'Courier New', monospace)
+                <br />
+                <br />
+                Extensions:
+                <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" title="Yes I'm bad at spelling.">Code Spell Checker</a>,
+                <a href="https://marketplace.visualstudio.com/items?itemName=fill-labs.dependi" title="Just 1 glance to see outdated dependency versions & just 1 click to update dependencies.">Dependi</a>,
+                <a href="https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree" title="You won't believe how many times I make something a future me problem with this extension.">Todo Tree</a>,
+                <a href="https://marketplace.visualstudio.com/items?itemName=Katsute.code-background" title="Anime girl background!">Background</a>
+                <br />
+                <small class="text-sm">
+                    There's a bunch more extensions but they're all language-specific.
+                </small>
             </slot:fragment>
         </TitleCard>
-        <TitleCard class="bg-zinc-950 col-span-1">
+        <!-- <TitleCard>
             <slot:fragment slot="title">
-                Tools
+                Web Browser
             </slot:fragment>
             <slot:fragment slot="description">
-                <a href="https://getpaint.net/">paint.net</a> (Image editing)
+                <a href="https://www.mozilla.org/firefox/">Firefox</a>
                 <br />
-                <a href="https://notepad-plus-plus.org/">Notepad++</a> (Text editing)
-                <br />
-                <a href="https://www.blender.org/">Blender</a> (3d modelling & video editing)
-                <br />
-                <a href="https://obsproject.com/">OBS Studio</a> (Video recording)
-                <br />
-                <a href="https://gemini.google.com/app">Google Gemini</a> (AI Assistant)
+                <small class="text-sm">
+                    * I have tried another Firefox-based browser. But DRM content does not play.
+                    <evensmaller class="text-xs" title="Web DRM doesn't do anything meaningful. It just annoys the heck out of people & forces some to turn to piracy.">
+                        FUCK GOOGLE & MICROSOFT, just another reason why I should switch to Linux to not have to deal with this.
+                    </evensmaller> 
+                </small>
             </slot:fragment>
-        </TitleCard>
+        </TitleCard> -->
     </div>
 </div>
 

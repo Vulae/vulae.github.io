@@ -54,7 +54,7 @@
         @apply grid-overlap aspect-square overflow-clip;
 
         .grid-item-image {
-            @apply object-cover aspect-square transition-[filter];
+            @apply w-full h-full object-cover aspect-square transition-[filter];
         }
 
         &:hover .grid-item-image {
