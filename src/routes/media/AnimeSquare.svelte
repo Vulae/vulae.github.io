@@ -1,16 +1,34 @@
 <script lang="ts">
     import { onMount } from "svelte";
 
-    const imgSizes = {
-        small: '640x360',
-        medium: '1200x675',
-        large: '1920x1080'
+    type ItemImage = {
+        type: 'crunchyroll';
+        id: string;
+    } | {
+        type: 'url',
+        url: string;
+    };
+
+    function getImageUrl(image: ItemImage, size: 'large' | 'small'): string {
+        switch(image.type) {
+            case 'crunchyroll': {
+                const imgSize = {
+                    small: '640x360',
+                    medium: '1200x675',
+                    large: '1920x1080'
+                }[size];
+                return `https://www.crunchyroll.com/imgsrv/display/thumbnail/${imgSize}/catalog/crunchyroll/${image.id}.jpe`;
+                break; }
+            case 'url': {
+                return image.url;
+                break; }
+        }
     }
 
     interface GridItem {
         name: string;
         url: string;
-        img: string;
+        img: ItemImage;
         comment?: string;
     }
 
@@ -86,7 +104,7 @@
             {#each items as item}
                 <button class="grid-item" title={item.name} on:click={() => currentItem = item}>
                     <img
-                        src="https://www.crunchyroll.com/imgsrv/display/thumbnail/{imgSizes.small}/catalog/crunchyroll/{item.img}" alt="{item.name}"
+                        src={getImageUrl(item.img, 'small')} alt="{item.name}"
                         class="grid-item-image"
                     >
                     <span class="grid-item-title">{item.name}</span>
@@ -98,7 +116,7 @@
             {#each items as item}
                 <a class="grid-item" title={item.name} href={item.url} target="_blank">
                     <img
-                        src="https://www.crunchyroll.com/imgsrv/display/thumbnail/{imgSizes.small}/catalog/crunchyroll/{item.img}" alt="{item.name}"
+                        src={getImageUrl(item.img, 'small')} alt="{item.name}"
                         class="grid-item-image"
                     >
                     <span class="grid-item-title">{item.name}</span>
@@ -112,8 +130,8 @@
         {@const item = currentItem}
         <div class="fade-in absolute top-0 left-0 w-full h-full grid-overlap z-20">
             <img
-                src="https://www.crunchyroll.com/imgsrv/display/thumbnail/{imgSizes.medium}/catalog/crunchyroll/{item.img}" alt="{item.name}"
-                class="aspect-square object-cover blur-sm scale-110"
+                src={getImageUrl(item.img, 'large')} alt="{item.name}"
+                class="aspect-square w-full h-full object-cover blur-sm scale-110"
             >
             <div class="z-10 flex flex-col justify-between text-white bg-gradient-to-t from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,1)]">
                 <div class="flex flex-col gap-4 px-8 py-4">

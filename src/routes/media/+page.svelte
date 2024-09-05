@@ -10,7 +10,7 @@
 
 <style lang="scss">
 
-    .youtube-list {
+    .creator-list {
         & > a {
             @apply flex gap-2 items-center;
             & > img {
@@ -33,14 +33,15 @@
     </dl>
     <div class="grid grid-rows-2 md:grid-cols-2 gap-8 mx-auto max-w-5xl">
         <TitleCard class="bg-zinc-950 row-span-2">
-            <slot:fragment slot="title">
+            <!-- <slot:fragment slot="title">
                 YouTube
-            </slot:fragment>
+            </slot:fragment> -->
             <slot:fragment slot="description">
+                <h1 class="text-white text-2xl font-bold">YouTube</h1>
                 <span>
                     Tech channels that are awesome —
                 </span>
-                <div class="youtube-list">
+                <div class="creator-list">
                     <a href="https://www.youtube.com/@Bismuth9" title="World record and tool-assisted speedrun explanations.">
                         <img src="https://yt3.googleusercontent.com/SSREcpreiHTyS3kTfBIOCOUNByeVb-3gvQoekzwZiVJMlY24_NqeTOZggIEI5UwyljSDurmP8w=s24" alt="@Bismuth9 Avatar" />
                         Bismuth
@@ -65,7 +66,7 @@
                 <span>
                     Awesome documentary channels —
                 </span>
-                <div class="youtube-list">
+                <div class="creator-list">
                     <a href="https://www.youtube.com/@XboxAhoy" title="Insightful gaming videos.">
                         <img src="https://yt3.googleusercontent.com/ytc/AIf8zZRskEAIr9p8xDjGVZZKxZrlaVOqr-mBZFxSycdlKg=s24" alt="@XboxAhoy Avatar" />
                         Ahoy
@@ -86,11 +87,15 @@
                         <img src="https://yt3.googleusercontent.com/ytc/AIf8zZTAYQXQXTL47WWey_Gor-KM7TTVJOia0ORbd9O0_g=s24" alt="@SummoningSalt Avatar" />
                         Summoning Salt
                     </a>
+                    <a href="https://www.youtube.com/@sea_space" title="I make chilled out videos about all things space-related. Hope you like what you see, thanks for stopping by! ">
+                        <img src="https://yt3.ggpht.com/ZcqlWtkaF6smZqOuyCnUy4nlhRKuusF_5wB2Z-br0YSWBO9NQVhPC6X5LMk-r90w55lniJJ-5w=s24" alt="@sea_space Avatar" />
+                        Sea
+                    </a>
                 </div>
                 <span>
                     Some other amazing channels —
                 </span>
-                <div class="youtube-list">
+                <div class="creator-list">
                     <a href="https://www.youtube.com/@Aliensrock" title="Hi I'm Tyler, and I have a puzzle game addiction.">
                         <img src="https://yt3.googleusercontent.com/ytc/AIf8zZTf3JO5neXj3mEeQ7sibbIZSHXM8dH5bi9ktsJM=s24" alt="@Aliensrock Avatar" />
                         Aliensrock
@@ -107,13 +112,39 @@
                         <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQrhG8raM7U3ZUHTZ1qlVZpZTVkxJPkVINJQPIL_Q=s24" alt="@CDawgVA Avatar" />
                         CDawgVA 
                     </a>
-                    <a href="https://www.youtube.com/@Profussy" title="Professor Lando is educating the masses on every single subject and discipline imaginable.">
+                    <!-- <a href="https://www.youtube.com/@Profussy" title="Professor Lando is educating the masses on every single subject and discipline imaginable.">
                         <img src="https://yt3.googleusercontent.com/PoKfZtEUZ5bgHUAMkXFWbAkg6whjTujwwq4hScDPk-GlTtfvpg2HVUzD48hx2jYwNsBm4Sq9=s24" alt="@Profussy Avatar" />
                         Professor Lando
-                    </a>
-                    <a href="https://www.youtube.com/@redshell907" title="Im just a guy who got lucky, not special.">
+                    </a> -->
+                    <!-- <a href="https://www.youtube.com/@redshell907" title="Im just a guy who got lucky, not special.">
                         <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQHptNuhp3zaXSTm1Ugk2ueYXLHeOTmYY0jJoAW=s24" alt="@redshell907 Avatar" />
                         Redshell
+                    </a> -->
+                </div>
+                <h1 class="text-white text-2xl font-bold">Twitch</h1>
+                <span>
+                    Twitch channels I frequently watch —
+                </span>
+                <div class="creator-list">
+                    <a href="https://www.twitch.tv/cdawgva" title="I'm that guy">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/49110706-4c6c-4da5-8037-0fbd429405f5-profile_image-70x70.png" alt="CDawgVa Avatar" />
+                        CDawgVa
+                    </a>
+                    <a href="https://www.twitch.tv/ironmouse" title="Im your cringe demon queen from VShojo">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/c2aca19b-b318-4398-99a5-fb6a597536fd-profile_image-70x70.png" alt="ironmouse Avatar" />
+                        ironmouse
+                    </a>
+                    <a href="https://www.twitch.tv/kephrii" title="Focuses on competitive First Person Shooter games!">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/e0414975-0beb-4f28-8799-26cbda05dc60-profile_image-70x70.jpeg" alt="Kephrii Avatar" />
+                        Kephrii
+                    </a>
+                    <a href="https://www.twitch.tv/meisaka" title="I like to write complex or challenging software, anything from engines to operating systems. Occasionally I play games, or reverse engineer stuff.">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/9a79ca99-e9ea-4a4c-a5df-ec42b0800cb4-profile_image-70x70.png" alt="Meisaka Avatar" />
+                        Meisaka
+                    </a>
+                    <a href="https://www.twitch.tv/theo" title="Hi I'm Theo I build things • Founder of ping.gg • ex-Twitch engineer • streamer I guess? ??">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/a7f1c81b-6f00-41fc-8da9-18aabf169e75-profile_image-70x70.png" alt="Theo Avatar" />
+                        Theo
                     </a>
                 </div>
             </slot:fragment>
@@ -129,41 +160,47 @@
                     items={[{
                         name: 'Mobile Suit Gundam the Witch from Mercury',
                         url: 'https://www.crunchyroll.com/series/G79H2307W/mobile-suit-gundam-the-witch-from-mercury',
-                        img: '07fda9ad4ae86df75320c1543a53719b.jpe',
+                        img: { type: 'crunchyroll', id: '07fda9ad4ae86df75320c1543a53719b' },
                         comment: "I very much recommend this anime for first time gundam watchers.<br /><br />I usually watch the currently airing gundam anime on <a href=\"https://www.youtube.com/@GundamInfo/playlists\">GundamInfo</a> YouTube channel."
                     }, {
                         name: 'To Your Eternity',
                         url: 'https://www.crunchyroll.com/series/GG5H5XMWV/to-your-eternity',
-                        img: '0ce768f96b6dfa3db33abfca5108919f.jpe'
+                        img: { type: 'crunchyroll', id: '0ce768f96b6dfa3db33abfca5108919f' },
+                        comment: "The first episode got me so hooked. I watched all 40 episodes in 2 days."
                     }, {
                         name: 'Horimiya',
                         url: 'https://www.crunchyroll.com/series/G9VHN9P43/horimiya',
-                        img: '3a1254f863bf0c9315086d37911c66df.jpe',
+                        img: { type: 'crunchyroll', id: '3a1254f863bf0c9315086d37911c66df' },
                         comment: "Very cute and wholesome romance anime."
                     }, {
                         name: "Vivy -Fluorite Eye's Song-",
                         url: 'https://www.crunchyroll.com/series/GMEHME4M4/vivy--fluorite-eyes-song-',
-                        img: '41c3eec54958204f4c962defffd948c7.jpe'
+                        img: { type: 'crunchyroll', id: '41c3eec54958204f4c962defffd948c7' }
                     }, {
                         name: "Snow White with the Red Hair",
                         url: 'https://www.crunchyroll.com/series/GRZJ7QN86/snow-white-with-the-red-hair',
-                        img: '9e04c79f744de8a33913958ec987f49a.jpe'
+                        img: { type: 'crunchyroll', id: '9e04c79f744de8a33913958ec987f49a' }
                     }, {
                         name: "Welcome to Demon School! Iruma-kun",
                         url: 'https://www.crunchyroll.com/series/G6NVG970Y/welcome-to-demon-school-iruma-kun',
-                        img: 'c0f666958d8a0bcadf03f637f6688672.jpe'
+                        img: { type: 'crunchyroll', id: 'c0f666958d8a0bcadf03f637f6688672' }
                     }, {
                         name: "Charlotte",
                         url: 'https://www.crunchyroll.com/series/GYGG99WDY/charlotte',
-                        img: '00e81d27511ab96bc39b3b343bd9971f.jpe'
+                        img: { type: 'crunchyroll', id: '00e81d27511ab96bc39b3b343bd9971f' }
                     }, {
                         name: "Terror in Resonance",
                         url: 'https://www.crunchyroll.com/series/G675W00MR/terror-in-resonance',
-                        img: 'e0bc1639524e169511fbabc9fcb15970.jpe'
+                        img: { type: 'crunchyroll', id: 'e0bc1639524e169511fbabc9fcb15970' }
                     }, {
-                        name: "Recovery of an MMO Junkie",
-                        url: 'https://www.crunchyroll.com/series/GR49WNQE6/recovery-of-an-mmo-junkie',
-                        img: '2bdcf4cae76581578c128c8e87f71036.jpe'
+                    //     name: "Recovery of an MMO Junkie",
+                    //     url: 'https://www.crunchyroll.com/series/GR49WNQE6/recovery-of-an-mmo-junkie',
+                    //     img: '2bdcf4cae76581578c128c8e87f71036.jpe'
+                    // }, {
+                        name: 'Rent-a-Girlfriend',
+                        url: 'https://www.crunchyroll.com/series/G6QWV3976/rent-a-girlfriend',
+                        img: { type: 'crunchyroll', id: '548c51dae7f89955eadaf9f9ce79359b' },
+                        comment: "Very degenerate but also extremely wholesome (Especially season 2)."
                     }]}
                 />
             </slot:fragment>
