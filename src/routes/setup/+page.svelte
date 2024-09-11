@@ -45,17 +45,35 @@
                         <td>16 GB 3600MHz DDR4</td>
                     </tr>
                     <tr>
-                        <td>Storage</td>
-                        <td>1TB SSD & 2TB HDD</td>
+                        <td>Storage (OS: Windows 10 Home)</td>
+                        <td>1TB SSD</td>
                     </tr>
                     <tr>
-                        <td>OS</td>
-                        <td>Windows 10 Home</td>
+                        <td>Storage (OS: Fedora Linux)</td>
+                        <td>1TB HDD</td>
+                    </tr>
+                    <tr>
+                        <td>Storage (Media storage)</td>
+                        <td>2TB HDD</td>
                     </tr>
                 </table>
             </slot:fragment>
         </TitleCard>
-        <TitleCard class="bg-zinc-950 row-span-2">
+        <TitleCard>
+            <slot:fragment slot="title">
+                Linux Setup
+            </slot:fragment>
+            <slot:fragment slot="description">
+                I still have yet to customize any of this<br />
+                OS: <a href="https://fedoraproject.org/workstation/">Fedora Linux 40 (Workstation Edition)</a><br />
+                Shell: <a href="https://zsh.sourceforge.io/">zsh 5.9</a> with <a href="https://ohmyz.sh/">oh-my-zsh</a><br />
+                Terminal: <a href="https://sw.kovidgoyal.net/kitty/">kitty</a><br />
+                DE: GNOME 46.4 (wayland)<br />
+                WM: Mutter<br />
+                WM Theme: Adwaita<br />
+            </slot:fragment>
+        </TitleCard>
+        <TitleCard class="bg-zinc-950">
             <slot:fragment slot="title">
                 Tools
             </slot:fragment>
@@ -94,23 +112,15 @@
                 <small class="text-sm">
                     There's a bunch more extensions but they're all language-specific.
                 </small>
+                <br />
+                <br />
+                <a href="https://zed.dev/">Zed</a>
+                <br />
+                Theme - Catppuccin Mocha
+                <br />
+                Font - Zed Plex Mono
             </slot:fragment>
         </TitleCard>
-        <!-- <TitleCard>
-            <slot:fragment slot="title">
-                Web Browser
-            </slot:fragment>
-            <slot:fragment slot="description">
-                <a href="https://www.mozilla.org/firefox/">Firefox</a>
-                <br />
-                <small class="text-sm">
-                    * I have tried another Firefox-based browser. But DRM content does not play.
-                    <evensmaller class="text-xs" title="Web DRM doesn't do anything meaningful. It just annoys the heck out of people & forces some to turn to piracy.">
-                        FUCK GOOGLE & MICROSOFT, just another reason why I should switch to Linux to not have to deal with this.
-                    </evensmaller> 
-                </small>
-            </slot:fragment>
-        </TitleCard> -->
     </div>
 </div>
 
