@@ -6,6 +6,7 @@
     import SocialLink from "./SocialLink.svelte";
 
     let emailRevealed: boolean = false;
+    let base64Email: string = "dnVsYWUuZkBnbWFpbC5jb20=";
 
 </script>
 
@@ -98,9 +99,10 @@
                                 class="w-full hover:text-zinc-300"
                             >Click to reveal</button>
                         {:else}
+                            {@const email = atob(base64Email)}
                             <a
-                                href="mailto:vulae.f@gmail.com"
-                            >vulae.f@gmail.com</a>
+                                href="mailto:{email}"
+                            >{email}</a>
                         {/if}
                     </span>
                 </div>
