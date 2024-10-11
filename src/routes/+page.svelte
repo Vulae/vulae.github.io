@@ -5,6 +5,8 @@
     import Profile from "$components/Profile.svelte";
     import SocialLink from "./SocialLink.svelte";
 
+    let emailRevealed: boolean = false;
+
 </script>
 
 <svelte:head>
@@ -48,7 +50,9 @@
             </div>
             <div class="col-span-full flex justify-center p-2 border-t border-zinc-800">
                 <span class="text-xs font-normal [&>a]:underline">
-                    <a href="#logos">Logo attribution</a> • <a href="https://github.com/Vulae/vulae.github.io">Source</a>
+                    <a href="#logos">Logo attribution</a> • 
+                    <a href="https://github.com/Vulae/vulae.github.io">Source</a> • 
+                    <a href="#email">Email</a>
                 </span>
             </div>
         </Card>
@@ -71,6 +75,37 @@
                 </div>
                 <span class="mx-auto text-xs font-normal">
                     Logos are property of their respective owners.
+                </span>
+            </div>
+        </Card>
+    </Popup>
+
+    <Popup id="email">
+        <Card
+            class="flex flex-col text-white font-segoe text-lg font-semibold max-w-64"
+            glowSize={300}
+        >
+            <span class="m-auto p-1">
+                Email
+            </span>
+            <div class="flex flex-col gap-1 py-2 border-t border-t-zinc-800">
+                <div class="flex flex-col items-center px-8">
+                    <span class="w-48 flex justify-center bg-black rounded-md">
+                        {#if !emailRevealed}
+                            <button
+                                on:click={() => emailRevealed = true}
+                                title="Click to reveal"
+                                class="w-full hover:text-zinc-300"
+                            >Click to reveal</button>
+                        {:else}
+                            <a
+                                href="mailto:vulae.f@gmail.com"
+                            >vulae.f@gmail.com</a>
+                        {/if}
+                    </span>
+                </div>
+                <span class="mx-auto text-xs font-normal text-center px-8">
+                    Please message me on Discord instead of email if possible :)
                 </span>
             </div>
         </Card>

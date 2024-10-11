@@ -96,29 +96,26 @@
                 Code Editor
             </slot:fragment>
             <slot:fragment slot="description">
+                <a href="https://neovim.io/">Neovim</a>
+                <small class="text-sm">(Rust & general text editing)</small>
+                <br />
+                With <a href="https://github.com/nvim-lua/kickstart.nvim">kickstart.nvim</a>
+                <br />
+                Color Theme - habamax
+                <br />
+                <br />
                 <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+                <small class="text-sm">(Webdev stuff)</small>
                 <br />
                 Theme - Default (Dark Modern)
                 <br />
-                Font - Default (Consolas, 'Courier New', monospace)
-                <br />
+                Font - Noto Sans Medium
                 <br />
                 Extensions:
                 <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" title="Yes I'm bad at spelling.">Code Spell Checker</a>,
                 <a href="https://marketplace.visualstudio.com/items?itemName=fill-labs.dependi" title="Just 1 glance to see outdated dependency versions & just 1 click to update dependencies.">Dependi</a>,
                 <a href="https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree" title="You won't believe how many times I make something a future me problem with this extension.">Todo Tree</a>,
                 <a href="https://marketplace.visualstudio.com/items?itemName=Katsute.code-background" title="Anime girl background!">Background</a>
-                <br />
-                <small class="text-sm">
-                    There's a bunch more extensions but they're all language-specific.
-                </small>
-                <br />
-                <br />
-                <a href="https://zed.dev/">Zed</a>
-                <br />
-                Theme - Catppuccin Mocha
-                <br />
-                Font - Zed Plex Mono
             </slot:fragment>
         </TitleCard>
     </div>
