@@ -25,4 +25,4 @@
 
 </script>
 
-<span>{kaomoji}</span>
+<span class="text-nowrap whitespace-nowrap">{kaomoji}</span>
