@@ -1,3 +1,7 @@
+<script lang="ts">
+    import Kaomoji from "./Kaomoji.svelte";
+
+</script>
 
 <style lang="scss">
 
@@ -32,6 +36,6 @@
         </span>
     </div>
     <span class="font-segoe text-2xl text-white drop-shadow-outset text-center">
-        I program <span class="italic">sometimes</span> . . . o_o
+        I program <span class="italic">sometimes</span> . . . <Kaomoji />
     </span>
 </div>
