@@ -45,7 +45,8 @@
                 <div class="flex flex-col md:px-8">
                     <SocialLink href="https://github.com/Vulae" img="/logos/github-mark.svg" img_alt="GitHub" title="GitHub profile">Vulae</SocialLink>
                     <SocialLink href="https://discordapp.com/users/1043398419030482994" img="/logos/discord-mark.svg" img_alt="Discord" title="Add as friend on Discord">vulae</SocialLink>
-                    <SocialLink href="https://www.reddit.com/user/vulae_" img="/logos/reddit-mark.svg" img_alt="Reddit" title="Reddit profile">u/vulae_</SocialLink>
+                    <SocialLink href="https://www.twitch.tv/vulae_" img="/logos/twitch-mark.svg" img_alt="Twitch" title="Twitch channel">Vulae_</SocialLink>
+                    <!-- <SocialLink href="https://www.reddit.com/user/vulae_" img="/logos/reddit-mark.svg" img_alt="Reddit" title="Reddit profile">u/vulae_</SocialLink> -->
                     <SocialLink href="https://www.youtube.com/@vulae" img="/logos/youtube-mark.svg" img_alt="YouTube" title="YouTube channel">@vulae</SocialLink>
                 </div>
             </div>
@@ -71,7 +72,8 @@
                 <div class="flex flex-col px-8">
                     <SocialLink href="https://github.com/logos" img="/logos/github-mark.svg" img_alt="GitHub" newTab={false}>GitHub logo</SocialLink>
                     <SocialLink href="https://discord.com/branding" img="/logos/discord-mark.svg" img_alt="Discord" newTab={false}>Discord logo</SocialLink>
-                    <SocialLink href="https://www.redditinc.com/brand" img="/logos/reddit-mark.svg" img_alt="Reddit" newTab={false}>Reddit logo</SocialLink>
+                    <SocialLink href="https://brand.twitch.com/" img="/logos/twitch-mark.svg" img_alt="Twitch" newTab={false}>Twitch logo</SocialLink>
+                    <!-- <SocialLink href="https://www.redditinc.com/brand" img="/logos/reddit-mark.svg" img_alt="Reddit" newTab={false}>Reddit logo</SocialLink> -->
                     <SocialLink href="https://www.youtube.com/howyoutubeworks/resources/brand-resources/" img="/logos/youtube-mark.svg" img_alt="YouTube" newTab={false}>YouTube logo</SocialLink>
                 </div>
                 <span class="mx-auto text-xs font-normal">
