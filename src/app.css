@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@font-face {
+    font-family: 'Caveat';
+    src: url("https://fonts.gstatic.com/s/caveat/v18/Wnz6HAc5bAfYB2Q7ZjYY.woff2");
+}
+
+@theme {
+    --font-caveat: "Caveat";
+    --font-segoe: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+::selection {
+    background: blueviolet;
+}

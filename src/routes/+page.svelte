@@ -1,117 +1,135 @@
 <script lang="ts">
-    import Background from "$components/Background.svelte";
-    import Card from "$components/Card.svelte";
-    import Popup from "$components/Popup.svelte";
-    import Profile from "$components/Profile.svelte";
-    import SocialLink from "./SocialLink.svelte";
-
-    let emailRevealed: boolean = false;
-    let base64Email: string = "dnVsYWUuZkBnbWFpbC5jb20=";
-
+    import Background from "../components/Background.svelte";
+    import Card from "../components/Card.svelte";
+    import Kaomoji from "../components/Kaomoji.svelte";
 </script>
 
-<svelte:head>
-    <title>Vulae</title>
-</svelte:head>
+{#snippet socialLink(
+    href: string,
+    img: string,
+    img_alt: string,
+    title: string,
+    text: string,
+)}
+    <a
+        {href}
+        {title}
+        class="flex items-center justify-between gap-4 px-8 py-2 drop-shadow-sm transition-all hover:drop-shadow-lg hover:text-gray-300 hover:scale-105"
+        target="_blank"
+    >
+        <img src={img} alt={img_alt} class="w-8" />
+        {text}
+    </a>
+{/snippet}
 
-<Background class="absolute w-full h-full" />
+<div class="w-screen h-screen grid grid-cols-1 grid-rows-1">
+    <Background
+        class="w-full h-full col-start-1 col-end-1 row-start-1 row-end-1 object-cover static"
+    />
 
-<div class="w-screen h-screen flex items-center justify-center">
-    <div class="flex max-lg:flex-col flex-wrap items-center justify-center gap-16 p-8 max-w-full max-h-full">
-        
-        <Profile />
-        
-        <div class="w-1 h-72 max-lg:hidden rounded-full bg-zinc-800 drop-shadow-outset-sm" />
-        <div class="w-full max-w-lg h-1 lg:hidden rounded-full bg-zinc-800 drop-shadow-outset-sm" />
-    
-        <Card
-            class="grid grid-cols-2 grid-flow-row text-white font-segoe text-lg font-semibold overflow-hidden"
-            glowSize={300}
-        >
-            <div class="w-48 md:w-64 flex flex-col border-r border-zinc-800">
-                <span class="text-center p-1 border-b border-zinc-800">
-                    Pages
-                </span>
-                <div class="flex flex-col gap-1 py-2 [&>a]:px-4 [&>a]:text-center">
-                    <a href="/projects" title="A list of my projects">Projects</a>
-                    <a href="/media" title="Media I like">Media</a>
-                    <a href="/setup" title="My Setup">Setup</a>
-                </div>
-            </div>
-            <div class="w-48 md:w-64 flex flex-col">
-                <span class="text-center w-full p-1 border-b border-zinc-800">
-                    Links
-                </span>
-                <div class="flex flex-col md:px-8">
-                    <SocialLink href="https://github.com/Vulae" img="/logos/github-mark.svg" img_alt="GitHub" title="GitHub profile">Vulae</SocialLink>
-                    <SocialLink href="https://discordapp.com/users/1043398419030482994" img="/logos/discord-mark.svg" img_alt="Discord" title="Add as friend on Discord">vulae</SocialLink>
-                    <SocialLink href="https://www.twitch.tv/vulae_" img="/logos/twitch-mark.svg" img_alt="Twitch" title="Twitch channel">Vulae_</SocialLink>
-                    <!-- <SocialLink href="https://www.reddit.com/user/vulae_" img="/logos/reddit-mark.svg" img_alt="Reddit" title="Reddit profile">u/vulae_</SocialLink> -->
-                    <SocialLink href="https://www.youtube.com/@vulae" img="/logos/youtube-mark.svg" img_alt="YouTube" title="YouTube channel">@vulae</SocialLink>
-                </div>
-            </div>
-            <div class="col-span-full flex justify-center p-2 border-t border-zinc-800">
-                <span class="text-xs font-normal [&>a]:underline">
-                    <a href="#logos">Logo attribution</a> • 
-                    <a href="https://github.com/Vulae/vulae.github.io">Source</a> • 
-                    <a href="#email">Email</a>
-                </span>
-            </div>
-        </Card>
-    </div>
-    
-    <Popup id="logos">
-        <Card
-            class="flex flex-col text-white font-segoe text-lg font-semibold"
-            glowSize={300}
-        >
-            <span class="m-auto p-1">
-                Logo Attribution
-            </span>
-            <div class="flex flex-col gap-1 py-2 border-t border-t-zinc-800">
-                <div class="flex flex-col px-8">
-                    <SocialLink href="https://github.com/logos" img="/logos/github-mark.svg" img_alt="GitHub" newTab={false}>GitHub logo</SocialLink>
-                    <SocialLink href="https://discord.com/branding" img="/logos/discord-mark.svg" img_alt="Discord" newTab={false}>Discord logo</SocialLink>
-                    <SocialLink href="https://brand.twitch.com/" img="/logos/twitch-mark.svg" img_alt="Twitch" newTab={false}>Twitch logo</SocialLink>
-                    <!-- <SocialLink href="https://www.redditinc.com/brand" img="/logos/reddit-mark.svg" img_alt="Reddit" newTab={false}>Reddit logo</SocialLink> -->
-                    <SocialLink href="https://www.youtube.com/howyoutubeworks/resources/brand-resources/" img="/logos/youtube-mark.svg" img_alt="YouTube" newTab={false}>YouTube logo</SocialLink>
-                </div>
-                <span class="mx-auto text-xs font-normal">
-                    Logos are property of their respective owners.
-                </span>
-            </div>
-        </Card>
-    </Popup>
-
-    <Popup id="email">
-        <Card
-            class="flex flex-col text-white font-segoe text-lg font-semibold max-w-64"
-            glowSize={300}
-        >
-            <span class="m-auto p-1">
-                Email
-            </span>
-            <div class="flex flex-col gap-1 py-2 border-t border-t-zinc-800">
-                <div class="flex flex-col items-center px-8">
-                    <span class="w-48 flex justify-center bg-black rounded-md">
-                        {#if !emailRevealed}
-                            <button
-                                on:click={() => emailRevealed = true}
-                                title="Click to reveal"
-                                class="w-full hover:text-zinc-300"
-                            >Click to reveal</button>
-                        {:else}
-                            {@const email = atob(base64Email)}
-                            <a
-                                href="mailto:{email}"
-                            >{email}</a>
-                        {/if}
+    <div
+        class="w-full h-full col-start-1 col-end-1 row-start-1 row-end-1 flex flex-col"
+    >
+        <div class="w-screen h-screen flex items-center justify-center">
+            <div
+                class="flex max-lg:flex-col flex-wrap items-center justify-center gap-16 p-8 max-w-full max-h-full"
+            >
+                <div class="profile flex flex-col gap-4">
+                    <div
+                        class="group flex justify-center gap-2 px-2 py-4 profile-avatar-name"
+                    >
+                        <img
+                            src="/picture.png"
+                            alt="Profile Profile"
+                            class="w-24 h-24 rounded-full border-2 border-zinc-900"
+                        />
+                        <span
+                            class="px-2 font-caveat text-8xl font-semibold name"
+                        >
+                            Vulae
+                        </span>
+                    </div>
+                    <span
+                        class="font-segoe text-2xl text-white drop-shadow-outset text-center"
+                    >
+                        I program <span class="italic">sometimes</span> . . .
+                        <Kaomoji />
                     </span>
                 </div>
-                <span class="mx-auto text-xs font-normal text-center px-8">
-                    Please message me on Discord instead of email if possible :)
-                </span>
+
+                <div
+                    class="w-1 h-72 max-lg:hidden rounded-full bg-zinc-800 drop-shadow-outset-sm"
+                ></div>
+                <div
+                    class="w-full h-1 lg:hidden rounded-full bg-zinc-800 drop-shadow-outset-sm"
+                ></div>
+
+                <Card
+                    class="flex flex-col text-white font-segoe text-lg font-semibold"
+                    glowSize={300}
+                >
+                    <span
+                        class="text-center w-full p-2 border-b border-zinc-800"
+                    >
+                        Links
+                    </span>
+                    <div class="flex flex-col px-8 py-1">
+                        {@render socialLink(
+                            "https://github.com/Vulae",
+                            "/logos/github-mark.svg",
+                            "GitHub",
+                            "GitHub profile",
+                            "Vulae",
+                        )}
+                        {@render socialLink(
+                            "https://discordapp.com/users/1043398419030482994",
+                            "/logos/discord-mark.svg",
+                            "Discord",
+                            "Add as friend on Discord",
+                            "@vulae",
+                        )}
+                        {@render socialLink(
+                            "https://www.twitch.tv/vulae_",
+                            "/logos/twitch-mark.svg",
+                            "Twitch",
+                            "Twitch channel",
+                            "Vulae_",
+                        )}
+                        {@render socialLink(
+                            "https://www.youtube.com/@vulae",
+                            "/logos/youtube-mark.svg",
+                            "YouTube",
+                            "YouTube channel",
+                            "@vulae",
+                        )}
+                        {@render socialLink(
+                            "https://www.reddit.com/user/vulae_",
+                            "/logos/reddit-mark.svg",
+                            "Reddit",
+                            "Reddit profile",
+                            "u/vulae_",
+                        )}
+                    </div>
+                </Card>
             </div>
-        </Card>
-    </Popup>
+        </div>
+    </div>
 </div>
+
+<style>
+    .profile-avatar-name {
+        filter: drop-shadow(5px 3px 2px black);
+    }
+
+    .name {
+        background: linear-gradient(
+            56deg,
+            rgba(139, 0, 181, 1) 10%,
+            rgba(0, 130, 176, 1) 50%,
+            rgba(0, 33, 255, 1) 80%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+</style>

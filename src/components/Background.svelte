@@ -1,33 +1,27 @@
+<!-- Firefox has issues rendering the SVG, so we just use a static .png for firefox. -->
+
 <script lang="ts">
-    let _class: string = '';
-    export { _class as class }
+    let { class: _class = "" }: { class?: string } = $props();
 </script>
 
-<style lang="scss">
-    // In Firefox rendering the background SVG is EXTREMELY slow & buggy.
-    // It does render still just the scaling is all messed up at very specific sizes (Like very weird sizes I actually have 0 clue why.)
-    // So I just disable it to prevent page from going unresponsive.
+<img
+    src="./background.svg"
+    alt="Background"
+    class="background-animated {_class}"
+/>
+<img
+    src="./background-static.png"
+    alt="Background"
+    class="background-static {_class}"
+/>
+
+<style>
     @supports (-moz-appearance: none) {
-        .background-motion-reduce {
-            display: none;
-        }
         .background-static {
             display: block !important;
         }
-    }
-
-    .background {
-        view-transition-name: background;
+        .background-animated {
+            display: none !important;
+        }
     }
 </style>
-
-<img
-    src="/background.svg"
-    alt="Background"
-    class="background background-motion-reduce motion-reduce:hidden {_class}"
-/>
-<img
-    src="/background-static.png"
-    alt="Background"
-    class="background background-static motion-safe:hidden object-cover {_class}"
-/>
