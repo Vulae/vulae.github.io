@@ -11,6 +11,18 @@
     --font-segoe: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
 }
 
+* {
+    @apply font-segoe;
+}
+
 ::selection {
     background: blueviolet;
+}
+
+html {
+    @apply scroll-smooth;
+}
+
+.link {
+    @apply text-blue-500 hover:text-blue-600 transition-colors;
 }

@@ -1,7 +1,21 @@
+<!--
+    To whomever is reading this:
+        In my very little wisdom, I have decided to attempt remaking this.
+        I have completely forgot how shit webdev is, like how does anyone do this without going insane?
+        So much stuff just doesn't work how you'd expect, and maybe it's not wrong, but it's not entirely correct.
+
+        There's so many stupid hacks and stuff, which when I look back at pre svelte-5, it just seems to work, but now it doesn't.
+        Mostly having to do with selector specificity just not working basically anywhere.
+        And also a bunch of stupid warnings that will not go away, but the project builds without warnings?
+
+        Sorry about the wall of text, just putting it here to remind myself to never touch this again.
+-->
 <script lang="ts">
     import Background from "../components/Background.svelte";
     import Card from "../components/Card.svelte";
     import Kaomoji from "../components/Kaomoji.svelte";
+
+    import { LucideChevronDown } from "@lucide/svelte";
 </script>
 
 {#snippet socialLink(
@@ -30,6 +44,7 @@
     <div
         class="w-full h-full col-start-1 col-end-1 row-start-1 row-end-1 flex flex-col"
     >
+        <div class="w-full h-16"></div>
         <div class="w-screen h-screen flex items-center justify-center">
             <div
                 class="flex max-lg:flex-col flex-wrap items-center justify-center gap-16 p-8 max-w-full max-h-full"
@@ -43,14 +58,15 @@
                             alt="Profile Profile"
                             class="w-24 h-24 rounded-full border-2 border-zinc-900"
                         />
+                        <!-- font-caveat! selector specificity is stupid. . . -->
                         <span
-                            class="px-2 font-caveat text-8xl font-semibold name"
+                            class="px-2 font-caveat! text-8xl font-semibold name"
                         >
                             Vulae
                         </span>
                     </div>
                     <span
-                        class="font-segoe text-2xl text-white drop-shadow-outset text-center"
+                        class="text-2xl text-white drop-shadow-outset text-center"
                     >
                         I program <span class="italic">sometimes</span> . . .
                         <Kaomoji />
@@ -65,7 +81,7 @@
                 ></div>
 
                 <Card
-                    class="flex flex-col text-white font-segoe text-lg font-semibold"
+                    class="flex flex-col text-white text-lg font-semibold"
                     glowSize={300}
                 >
                     <span
@@ -111,6 +127,90 @@
                         )}
                     </div>
                 </Card>
+            </div>
+        </div>
+        <div class="w-full h-16">
+            <div
+                class="bg-gradient-to-b from-transparent to-black w-full h-full"
+            >
+                <a
+                    href="#projects"
+                    class="flex justify-around mix-blend-color-dodge opacity-50 text-white hover:text-gray-200 hover:translate-y-1 transition-all"
+                >
+                    <LucideChevronDown size="42px" class="not-lg:hidden" />
+                    <LucideChevronDown size="42px" class="not-sm:hidden" />
+                    <LucideChevronDown size="42px" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div
+    class="w-screen flex flex-col items-center bg-gradient-to-br from-pink-950 to-purple-950"
+>
+    <div class="w-full h-16 bg-gradient-to-b from-black to-transparent"></div>
+
+    <div class="px-16 pb-4" id="projects">
+        <dl class="px-4 py-2 max-w-lg mx-auto my-16">
+            <dt class="text-zinc-200 text-4xl font-bold mb-1">Projects</dt>
+            <dd class="text-zinc-400 text-2xl">
+                For a more extensive list of projects, check out my
+                <a
+                    href="https://github.com/Vulae?tab=repositories"
+                    class="link"
+                >
+                    GitHub
+                </a>
+            </dd>
+        </dl>
+
+        <div class="flex flex-col items-center">
+            <div
+                class="grid items-center justify-items-center md:grid-cols-2 not-md:max-w-[24rem] max-w-[48rem] gap-6 text-zinc-200"
+            >
+                <div class="text-xl p-4">
+                    <a
+                        href="https://github.com/Vulae/pkmc"
+                        class="link text-3xl font-bold"
+                    >
+                        pkmc
+                    </a>
+                    <br />
+                    Framework for building simple minigame-like Minecraft servers
+                    in Rust
+                </div>
+                <img src="/pkmc.png" alt="pkmc" class="h-48" />
+                <div class="text-xl p-4">
+                    <a
+                        href="https://github.com/Vulae/infinite-minesweeper"
+                        class="link text-3xl font-bold"
+                    >
+                        infinite-minesweeper
+                    </a>
+                    <br />
+                    Infinite Minesweeper game with biomes that change the rules
+                </div>
+                <img
+                    src="/infinite-minesweeper.png"
+                    alt="Infinite Minesweeper"
+                    class="h-48"
+                />
+                <div class="text-xl p-4">
+                    <a
+                        href="https://github.com/Vulae/universal-explorer"
+                        class="link text-3xl font-bold"
+                    >
+                        universal-explorer
+                    </a>
+                    <br />
+                    Simple tool to view & unpack a variety of game archive formats
+                </div>
+                <img
+                    src="/universal-explorer.png"
+                    alt="Universal Explorer"
+                    class="h-48"
+                />
             </div>
         </div>
     </div>
