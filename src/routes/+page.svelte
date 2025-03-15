@@ -154,9 +154,6 @@
             </div>
         </div>
     </div>
-
-    <canvas class="w-full h-full col-start-1 col-end-1 row-start-1 row-end-1">
-    </canvas>
 </div>
 
 <div
