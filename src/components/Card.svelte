@@ -1,4 +1,5 @@
 <script lang="ts">
+    import type { Snippet } from "svelte";
     import type { Action } from "svelte/action";
 
     let {
@@ -10,7 +11,7 @@
         class?: string;
         glowSize?: number;
         glowVisibility?: number;
-        children?: any; // TODO: What the type?
+        children: Snippet<[]>;
     } = $props();
 
     /** Injects `--mouse-x` & `--mouse-y` variables into element style. */

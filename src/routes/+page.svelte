@@ -11,34 +11,26 @@
         Sorry about the wall of text, just putting it here to remind myself to never touch this again.
 -->
 <script lang="ts">
+    import { onMount } from "svelte";
     import Background from "../components/Background.svelte";
     import Card from "../components/Card.svelte";
     import Kaomoji from "../components/Kaomoji.svelte";
 
-    import { LucideChevronDown } from "@lucide/svelte";
-</script>
+    import {
+        LucideChevronDown,
+        LucideChevronLeft,
+        LucideChevronRight,
+    } from "@lucide/svelte";
 
-{#snippet socialLink(
-    href: string,
-    img: string,
-    img_alt: string,
-    title: string,
-    text: string,
-)}
-    <a
-        {href}
-        {title}
-        class="flex items-center justify-between gap-4 px-8 py-2 drop-shadow-sm transition-all hover:drop-shadow-lg hover:text-gray-300 hover:scale-105"
-        target="_blank"
-    >
-        <img src={img} alt={img_alt} class="w-8" />
-        {text}
-    </a>
-{/snippet}
+    let email: string | null = null;
+    onMount(() => {
+        email = atob("dnVsYWUuZkBnbWFpbC5jb20=");
+    });
+</script>
 
 <div class="w-screen h-screen grid grid-cols-1 grid-rows-1">
     <Background
-        class="w-full h-full col-start-1 col-end-1 row-start-1 row-end-1 object-cover static"
+        class="w-full h-full col-start-1 col-end-1 row-start-1 row-end-1 object-cover"
     />
 
     <div
@@ -79,6 +71,24 @@
                 <div
                     class="w-full h-1 lg:hidden rounded-full bg-zinc-800 drop-shadow-outset-sm"
                 ></div>
+
+                {#snippet socialLink(
+                    href: string,
+                    img: string,
+                    img_alt: string,
+                    title: string,
+                    text: string,
+                )}
+                    <a
+                        {href}
+                        {title}
+                        class="flex items-center justify-between gap-4 px-8 py-2 drop-shadow-sm transition-all hover:drop-shadow-lg hover:text-gray-300 hover:scale-105"
+                        target="_blank"
+                    >
+                        <img src={img} alt={img_alt} class="w-8" />
+                        {text}
+                    </a>
+                {/snippet}
 
                 <Card
                     class="flex flex-col text-white text-lg font-semibold"
@@ -144,6 +154,9 @@
             </div>
         </div>
     </div>
+
+    <canvas class="w-full h-full col-start-1 col-end-1 row-start-1 row-end-1">
+    </canvas>
 </div>
 
 <div
@@ -151,8 +164,8 @@
 >
     <div class="w-full h-16 bg-gradient-to-b from-black to-transparent"></div>
 
-    <div class="px-16 pb-4" id="projects">
-        <dl class="px-4 py-2 max-w-lg mx-auto my-16">
+    <div class="p-16 flex flex-col gap-16" id="projects">
+        <dl class="px-4 py-2 max-w-lg mx-auto">
             <dt class="text-zinc-200 text-4xl font-bold mb-1">Projects</dt>
             <dd class="text-zinc-400 text-2xl">
                 For a more extensive list of projects, check out my
@@ -190,12 +203,29 @@
                     </a>
                     <br />
                     Infinite Minesweeper game with biomes that change the rules
+                    <span class="font-bold flex items-center">
+                        <LucideChevronRight strokeWidth="0.175rem" />
+                        <a
+                            href="https://vulae.github.io/infinite-minesweeper"
+                            class="link"
+                            target="_blank"
+                        >
+                            PLAY
+                        </a>
+                        <LucideChevronLeft strokeWidth="0.175rem" />
+                    </span>
                 </div>
-                <img
-                    src="/infinite-minesweeper.png"
-                    alt="Infinite Minesweeper"
-                    class="h-48"
-                />
+                <a
+                    href="https://vulae.github.io/infinite-minesweeper"
+                    target="_blank"
+                    class="hover:scale-105 transition-transform"
+                >
+                    <img
+                        src="/infinite-minesweeper.png"
+                        alt="Infinite Minesweeper"
+                        class="h-48"
+                    />
+                </a>
                 <div class="text-xl p-4">
                     <a
                         href="https://github.com/Vulae/universal-explorer"
@@ -214,7 +244,54 @@
             </div>
         </div>
     </div>
+
+    <div class="w-full h-16 bg-gradient-to-b from-transparent to-black"></div>
 </div>
+
+<footer
+    class="bg-black text-white flex flex-wrap justify-center gap-x-32 gap-y-12 px-16 py-4"
+>
+    {#snippet footerLinks(groups: {
+        [key: string]: {
+            [key: string]: string;
+        };
+    })}
+        {#each Object.entries(groups) as [groupName, group]}
+            <section class="flex flex-col">
+                <h1 class="font-bold">{groupName}</h1>
+                <span class="pl-4 flex flex-col border-l-2 border-l-white">
+                    {#each Object.entries(group) as [linkName, link]}
+                        <a
+                            href={link}
+                            target={link.startsWith("http") ? "_blank" : ""}
+                            class="text-gray-300 hover:text-white transition-colors underline"
+                        >
+                            {linkName}
+                        </a>
+                    {/each}
+                </span>
+            </section>
+        {/each}
+    {/snippet}
+
+    {@render footerLinks({
+        Contact: {
+            Email: `mailto:${email}`,
+            Discord: "https://discordapp.com/users/1043398419030482994",
+        },
+        Other: {
+            Source: "https://github.com/Vulae/vulae.github.io",
+        },
+        "Logo Attribution": {
+            GitHub: "https://github.com/logos",
+            Discord: "https://discord.com/branding",
+            Twitch: "https://brand.twitch.com/",
+            YouTube:
+                "https://www.youtube.com/howyoutubeworks/resources/brand-resources/",
+            Reddit: "https://www.redditinc.com/brand",
+        },
+    })}
+</footer>
 
 <style>
     .profile-avatar-name {

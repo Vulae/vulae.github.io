@@ -13,6 +13,7 @@
 
 * {
     @apply font-segoe;
+    scrollbar-color: #5728a1 #1d0029;
 }
 
 ::selection {
