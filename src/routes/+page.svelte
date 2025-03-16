@@ -165,7 +165,7 @@
         <dl class="px-4 py-2 max-w-lg mx-auto">
             <dt class="text-zinc-200 text-4xl font-bold mb-1">Projects</dt>
             <dd class="text-zinc-400 text-2xl">
-                For a more extensive list of projects, check out my
+                For a more extensive list of projects check out my
                 <a
                     href="https://github.com/Vulae?tab=repositories"
                     class="link"
@@ -278,6 +278,7 @@
         },
         Other: {
             Source: "https://github.com/Vulae/vulae.github.io",
+            Kaomoji: "/kaomoji.txt",
         },
         "Logo Attribution": {
             GitHub: "https://github.com/logos",
