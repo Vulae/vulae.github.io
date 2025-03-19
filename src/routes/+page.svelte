@@ -279,6 +279,7 @@
         Other: {
             Source: "https://github.com/Vulae/vulae.github.io",
             Kaomoji: "/kaomoji.txt",
+            DotFiles: "https://github.com/Vulae/nixos-config",
         },
         "Logo Attribution": {
             GitHub: "https://github.com/logos",
