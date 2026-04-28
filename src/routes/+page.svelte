@@ -245,6 +245,36 @@
     <div class="w-full h-16 bg-gradient-to-b from-transparent to-black"></div>
 </div>
 
+<div
+    class="w-screen flex flex-col items-center bg-gradient-to-br from-blue-950 to-green-950"
+>
+    <div class="w-full h-16 bg-gradient-to-b from-black to-transparent"></div>
+
+    <div class="px-16 py-32 flex flex-col gap-16" id="stack">
+        <dl class="px-4 py-2 max-w-lg mx-auto">
+            <dt class="text-zinc-200 text-4xl font-bold mb-1">My Stack</dt>
+            <dd class="text-zinc-400 text-2xl">My most used programming technologies</dd>
+        </dl>
+
+        {#snippet tech(link: string, name: string, icon: string)}
+            <a href={link} target="_blank" class="flex flex-col items-center gap-2 justify-between hover:scale-110 transition">
+                <img class="w-12 max-h-12" src={icon} alt={name}>
+                <span class="text-white font-bold text-1xl text-nowrap">{name}</span>
+            </a>
+        {/snippet}
+
+        <div class="flex justify-between flex-wrap">
+            {@render tech("https://nixos.org/", 'Nix/NixOS', "/logos/nixos-logomark-white-flat-minimal.svg")}
+            {@render tech("https://rust-lang.org/", 'Rust', "/logos/rust-logo.svg")}
+            {@render tech("https://bun.com/", 'Bun', "/logos/bun-icon.svg")}
+            {@render tech("https://www.typescriptlang.org/", 'TypeScript', "/logos/ts-logo-512.svg")}
+            {@render tech("https://svelte.dev/", 'Svelte', "/logos/svelte-logo-cutout.svg")}
+        </div>
+    </div>
+
+    <div class="w-full h-16 bg-gradient-to-b from-transparent to-black"></div>
+</div>
+
 <footer
     class="bg-black text-white flex flex-wrap justify-center gap-x-32 gap-y-12 px-16 py-4"
 >
@@ -288,6 +318,11 @@
             YouTube:
                 "https://www.youtube.com/howyoutubeworks/resources/brand-resources/",
             Reddit: "https://www.redditinc.com/brand",
+            Rust: "https://github.com/rust-lang/rust-artwork/tree/master/logo",
+            TypeScript: "https://www.typescriptlang.org/branding/",
+            Svelte: "https://github.com/sveltejs/branding",
+            NixOS: "https://github.com/NixOS/branding",
+            Bun: "https://bun.com/press-kit",
         },
     })}
 </footer>
