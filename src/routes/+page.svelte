@@ -253,7 +253,7 @@
     <div class="px-16 py-32 flex flex-col gap-16" id="stack">
         <dl class="px-4 py-2 max-w-lg mx-auto">
             <dt class="text-zinc-200 text-4xl font-bold mb-1">My Stack</dt>
-            <dd class="text-zinc-400 text-2xl">My most used programming technologies</dd>
+            <dd class="text-zinc-400 text-2xl">My main technologies I use for software development</dd>
         </dl>
 
         {#snippet tech(link: string, name: string, icon: string)}
