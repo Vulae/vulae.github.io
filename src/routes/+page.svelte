@@ -54,7 +54,7 @@
                         <span
                             class="px-2 font-caveat! text-8xl font-semibold name"
                         >
-                            Lillian
+                            Lilliana
                         </span>
                     </div>
                     <span

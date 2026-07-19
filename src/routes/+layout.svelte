@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>Lillian</title>
+	<title>Lilliana</title>
 	<link rel="icon" href="./favicon.png" />
 </svelte:head>
 
